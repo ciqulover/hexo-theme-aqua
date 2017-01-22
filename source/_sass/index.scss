@@ -1,0 +1,22 @@
+@import "_partial/header";
+@import "_partial/aside";
+@import "_partial/post";
+@import "_partial/pagination";
+@import "_partial/excerpt";
+@import "_partial/highligh";
+@import "_partial/archive";
+@import "_partial/copyright";
+@import "_partial/mq";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

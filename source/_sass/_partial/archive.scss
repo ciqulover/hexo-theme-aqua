@@ -1,0 +1,24 @@
+.archive {
+  margin-left: 20vw;
+  padding-top: 60px;
+  min-height: calc(100vh - 304px);
+  position: relative;
+  .archive-year {
+    color: #34495e;
+    margin: 30px 0;
+  }
+  .post-item {
+    margin: 10px 0;
+    padding-left: 30px;
+    overflow: hidden;
+    time {
+      float: left;
+      width: 150px;
+      color: #888;
+    }
+    a {
+      float: left;
+      color: #41b883;
+    }
+  }
+}

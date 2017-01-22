@@ -1,0 +1,15 @@
+extends partial/layout
+
+block content
+  aside
+    include mixins/aside.pug
+    +directory()
+  article.post.post-content.post-expand
+    h1= page.title
+    include mixins/post.pug
+    +postTime(page)
+    != page.content
+    include mixins/pagination.pug
+    +post()
+    include partial/comment.pug
+    include partial/copyright.pug

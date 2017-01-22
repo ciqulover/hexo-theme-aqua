@@ -1,0 +1,125 @@
+article.post {
+  font-size: 15px;
+  line-height: 2;
+  color: #555;
+  letter-spacing: 0.5px;
+  transition: all 0.6s;
+  &.post-content {
+    min-height: calc(100vh - 80px);
+    position: relative;
+    margin-left: 20vw;
+    padding: 50px 10%;
+    h1, h2, h3 {
+      margin: 24px 0;
+      padding-left: 20px;
+      border-left: 4px solid #41b883;
+    }
+  }
+  &.post-expand {
+    margin-left: 0;
+    padding: 50px 22vw;
+  }
+  // title in excerpt
+  &.post-item h2 {
+    text-align: center;
+    a {
+      display: inline-block;
+      height: 34px;
+      color: #666;
+      padding-bottom: 6px;
+      &:hover {
+        border-bottom: 2px solid #41b883;
+      }
+    }
+  }
+
+  .gutter {
+    display: none;
+  }
+
+  h1, h2, h3 {
+    color: #34495e;
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 200%;
+  }
+  h2 {
+    font-size: 160%;
+  }
+  h3 {
+    font-size: 120%;
+  }
+  h2, h3 {
+    margin: 6px 0;
+  }
+  h4, h5, h6 {
+    font-size: 110%;
+  }
+  a {
+    color: #41b883;
+  }
+  p {
+    margin: 20px 0;
+  }
+  time {
+    display: block;
+    margin: 20px 0;
+    color: #888;
+  }
+  ol, ul {
+    padding-left: 30px;
+  }
+  ul li {
+    position: relative;
+    list-style: none;
+    &:before {
+      position: absolute;
+      left: -14px;
+      top: 12px;
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #41b883;
+    }
+  }
+}
+
+article.post-content > h1:first-child {
+  border: none;
+  text-align: center;
+  font-size: 36px;
+  margin: 20px;
+  color: #777;
+}
+
+figure.highlight,figure.highlight table{
+  width: 100%;
+}
+
+pre, code, kbd, samp {
+  margin: 10px 0;
+  font-family: 'Roboto Mono', Monaco, courier, monospace;
+}
+
+pre {
+  width: calc(100% - 20px);
+  color: #fff;
+  overflow-x: auto;
+  font-size: 12px;
+  letter-spacing: .25px;
+  padding: 15px;
+  background-color: #48484a;
+  border-left: 4px solid #41b883;
+  box-shadow: 4px 4px 16px #aaa;
+  .line {
+    width: auto;
+  }
+}
+
+code {
+  background-color: #f8f8f8;
+  font-size: 13px;
+  padding: 1px 6px;
+}

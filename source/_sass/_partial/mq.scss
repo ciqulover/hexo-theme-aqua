@@ -1,0 +1,71 @@
+@media screen and(max-width: 1200px) {
+  header > .search {
+    display: none;
+  }
+  header > .description {
+    border-right: none;
+  }
+  header > nav {
+    width: 80vw;
+  }
+  div.media > a {
+    float: left;
+  }
+  div.recent-posts > .recent-posts-item {
+    & > a {
+      max-width: 90%;
+    }
+    & > time {
+      display: none;
+    }
+  }
+}
+
+@media screen and(max-width: 900px) {
+  header > .description {
+    margin-top: 20px;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    border: none;
+    p {
+      margin-left: 0;
+      display: inline-block;
+    }
+  }
+  header > nav {
+    width: 100vw;
+  }
+  div.recent-posts, aside {
+    display: none;
+  }
+  div.container, article.post.post-content, .archive {
+    margin-left: 0;
+  }
+  div.container, article.post.post-content {
+    min-height: calc(100vh - 180px);
+  }
+  .archive, .excerpts {
+    min-height: calc(100vh - 404px);
+  }
+  article.post.post-content > h1:first-child {
+    font-size: 26px;
+  }
+  ul.excerpts, article.post.post-content, .archive {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  header > nav > ul > li {
+    font-size: 14px;
+    margin-right: 4%;
+  }
+  pre{
+    width: calc(96vw - 20px);
+  }
+  .post-title-link {
+    width: calc(92vw - 200px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

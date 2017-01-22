@@ -1,0 +1,20 @@
+# navigation in header
+menu:
+  Home: /
+  Archives: /archives/
+  About: https://github.com/ycwalker/hexo-theme-cutie
+  Github: https://github.com/ycwalker/hexo-theme-cutie
+
+favicon: /ycwalker.ico
+logo: /logo.png
+
+# Comment
+# e.g. duoshuo: your name
+duoshuo:
+disqus:
+
+# Media links in sidebar, the icon name should be identical with font-awesome
+media:
+- {text: 微博, url: http://weibo.com/triplestonejiang, icon: weibo}
+- {text: GitHub, url: https://github.com/ycwalker, icon: github}
+- {text: Twitter, url: https://twitter.com/yc_walker, icon: twitter}

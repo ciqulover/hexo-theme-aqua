@@ -1,0 +1,16 @@
+header
+  .description
+    a(href='/')
+      img.logo(src=url_for(theme.logo))
+    p= config.description
+  .search
+    != search_form({button:true})
+  nav
+    ul.nav
+      each path, key in theme.menu
+        li
+          - const pattern = /^(http|https):\/\/*/gi
+          - const target = pattern.test(path)? '_blank' : '_self'
+          - var isActive = target == '_self' && '/' + page.current_url == path
+          a(class={active: isActive} href=url_for(path) target=target)
+            != key.toUpperCase()
