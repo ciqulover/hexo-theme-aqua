@@ -22,7 +22,7 @@ Simple yet beautiful theme for `hexo`, inspired by `nuxt.js`
 
 `cd blog`
 
-npm i hexo-render-pug --save
+`npm i hexo-render-pug --save`
 
 #### Clone theme
 
