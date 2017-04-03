@@ -12,6 +12,11 @@ logo: /logo.png
 # e.g. duoshuo: your name
 duoshuo:
 disqus:
+youyan: {appid: , conf: }
+
+# baidu Ananlysis
+bdAnalysis: 
+
 
 # Media links in sidebar, the icon name should be identical with font-awesome
 media:

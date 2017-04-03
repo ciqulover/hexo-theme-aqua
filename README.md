@@ -4,8 +4,6 @@ Simple yet beautiful theme for `hexo`, inspired by `nuxt.js`
 
 [中文说明](http://ycwalker.com/hexo-theme-cutie/)
 
-<img src="./demo.png" width = "900" alt="demo" align=center />
-
 ### Compatibility
 
 `IE9+`
@@ -36,7 +34,7 @@ In your `_config.yml`, change `theme` to `cutie`
 theme: cutie
 ```
 ### Customize
-In your `themes/cutie/_config.yml`, you can: 
+In your `themes/cutie/_config.yml`, you can:
 * Set `menu` in the blog header
 * Enable comment by choosing `duoshuo` or `disqus`
 * Add your social connect, the icon name requires to be identical with `font-awesome`

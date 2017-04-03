@@ -28,3 +28,13 @@ if theme.disqus
       ;(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq)
     })()
   script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.youyan.appid
+  - var sid = page.sid || page.path
+  div(id="SOHUCS" sid=sid)
+  script(src="https://changyan.sohu.com/upload/changyan.js")
+  script.
+    window.changyan.api.config({
+      appid: '#{theme.youyan.appid}',
+      conf: '#{theme.youyan.conf}'
+    })
