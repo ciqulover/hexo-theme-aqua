@@ -1,11 +1,8 @@
-extends partial/layout
+extends _partial/layout
 
 block content
-  include mixins/post.pug
-  include mixins/aside.pug
-  +recentPosts()
-  .container
-    +posts()
-    include mixins/pagination.pug
-    +home()
-    include partial/copyright.pug
+  include _components/home
+  include _components/posts
+  +posts
+  script
+    include ../source/js/scroll.js

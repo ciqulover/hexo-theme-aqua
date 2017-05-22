@@ -1,25 +1,61 @@
-# navigation in header
-menu:
-  Home: /
-  Archives: /archives/
-  About: https://github.com/ycwalker/hexo-theme-cutie
-  Github: https://github.com/ycwalker/hexo-theme-cutie
+# Blog info
+blog_name: ciqulover
+slogan: 此去
+url: https://ycwalker.com
 
-favicon: /ycwalker.ico
-logo: /logo.png
+# Set avatar (Absolute url and relative url)
+avatar: /images/avatar.jpg
 
-# Comment
-# e.g. duoshuo: your name
-duoshuo:
-disqus:
-youyan: {appid: , conf: }
+# Set favicon
+favicon: /images/favicon.ico
 
-# baidu Ananlysis
-bdAnalysis: 
+# For seo
+keywords: ycwalker,前端,设计,此去,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript
+
+home_nav:
+  - name: 归档
+    url: /archives
+    target_blank: false
+  - name: 分类
+    url: /categories
+    target_blank: false
+  - name: 关于
+    url: /about
+    target_blank: false
+  - name: GITHUB
+    url: https://github.com/ciqulover
+    target_blank: true
+
+# config page nav
+page_nav:
+  - name: 主页
+    url: /
+    target_blank: false # 不在新页面打开
+  - name: 归档
+    url: /archives
+    target_blank: false
+  - name: 分类
+    url: /categories
+    target_blank: false
+  - name: 标签
+    url: /tags/
+    target_blank: false
+  - name: 关于
+    url: /about/
+    target_blank: false
+#  - name: RSS
+#    url: /atom.xml
+#    target_blank: true # 在新页面打开
 
 
-# Media links in sidebar, the icon name should be identical with font-awesome
-media:
-- {text: 微博, url: http://weibo.com/triplestonejiang, icon: weibo}
-- {text: GitHub, url: https://github.com/ycwalker, icon: github}
-- {text: Twitter, url: https://twitter.com/yc_walker, icon: twitter}
+# =========================================================
+# 第三方服务
+# =========================================================
+# Stats
+google_analytics:
+baidu_analytics: ad593ccdd2ffe5cf791b35fee21d343d
+
+# Comment service
+disqus_shortname: ciqu
+
+

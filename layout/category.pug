@@ -10,5 +10,6 @@ block content
       include _components/posts
       .content
         .category-list
-          .circle 归档
-        +postLists()
+          .circle 分类
+          .list!=list_categories({style: 'none', separator: '  '})
+        +categories()

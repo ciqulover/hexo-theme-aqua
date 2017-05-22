@@ -1,0 +1,85 @@
+mixin posts()
+  ul.excerpts
+    - page.posts.forEach(function(post) {
+    li
+      div.article-meta
+        a.title(href=url_for(post.path))!= post.title
+        i.icon-calendar
+        | &nbsp;
+        time!= date(post.date, 'YYYY.MM.DD')
+      .post.post-excerpt!=post.excerpt
+      a.read-more(href=url_for(post.path))
+        | more...
+    - })
+
+
+mixin postLists()
+  -
+    var year = 0
+    var changed
+    function getAnimalIcon(year) {
+    return {
+    0: 'icon-hou',
+    1: 'icon-ji',
+    2: 'icon-gou',
+    3: 'icon-zhu',
+    4: 'icon-shu',
+    5: 'icon-niu',
+    6: 'icon-hu',
+    7: 'icon-tu',
+    8: 'icon-long',
+    9: 'icon-she',
+    10: 'icon-ma',
+    11: 'icon-yang'
+    }[parseInt(year) % 12]
+    }
+
+  - page.posts.each(function (item) {
+  - var thisYear = + date(item.date, 'YYYY')
+  - changed = year != thisYear
+  if changed
+    - year = thisYear
+    h1.post-year
+      a(href=url_for(config.archive_dir + '/' + year))!= year
+      i(class=getAnimalIcon(year))
+  .post-item
+    time!= date(item.date, 'MM.DD')
+    a.post-title-link(href= url_for(item.path))
+      != item.title
+  - })
+
+mixin categories()
+  - var categories=site.categories
+  - if (page.category){
+  - categories=categories.filter(function(category){
+  - return category.name==page.category
+  -})
+  -}
+  - categories.each(function(category){
+  h1.post-category
+    a(href=url_for(config.category_dir + '/' + category.name + '/'))!=category.name
+    span='( ' + category.posts.length + ' )'
+  - category.posts.each(function(post) {
+  .post-item
+    time!= date(post.date, 'MM.DD')
+    a.post-title-link(href= url_for(post.path))!= post.title
+  - })
+  - })
+
+mixin tags()
+  - var tags=site.tags
+  - if (page.tag){
+  - tags=tags.filter(function(tag){
+  - return tag.name==page.tag
+  -})
+  -}
+  - tags.each(function(tag){
+  h1.post-tag
+    a(href=url_for(config.tag_dir + '/' + tag.name + '/'))!=tag.name
+    span='( ' + tag.posts.length + ' )'
+  - tag.posts.each(function(post) {
+  .post-item
+    time!= date(post.date, 'MM.DD')
+    a.post-title-link(href= url_for(post.path))!= post.title
+  - })
+  - })

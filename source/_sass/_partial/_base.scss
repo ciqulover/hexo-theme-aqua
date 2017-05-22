@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #6b6882;
+  transition: all 0.4s;
+  &:hover {
+    text-decoration: none;
+    color: #1abc9c;
+  }
+}
+
+ul {
+  line-height: 1.8em;
+  list-style: none;
+  ol, li {
+    list-style: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+

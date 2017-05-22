@@ -1,0 +1,10 @@
+.home.text-center
+  a.avatar(href="/")
+    img(src=url_for(theme.avatar))
+  h1.name=theme.blog_name || config.title
+  .slogan=theme.slogan
+
+  hr
+
+  include ../_components/nav
+  +nav(theme.home_nav)

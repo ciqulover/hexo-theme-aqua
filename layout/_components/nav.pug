@@ -1,0 +1,9 @@
+mixin nav(navs)
+  .nav
+    ul
+      each nav in navs
+        li.item
+          if nav.target_blank === true
+            a(href=nav.url target="_blank")=nav.name
+          else
+            a(href=nav.url)=nav.name
