@@ -1,4 +1,4 @@
-#### An ultra hexo theme
+#### An ultra simple hexo theme
 ##### Rewrite from hexo theme [fexo](https://github.com/forsigner/fexo)
 
 [Demo](http://ycwalker.com/hexo-theme-aqua/)
