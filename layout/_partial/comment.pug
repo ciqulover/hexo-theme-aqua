@@ -1,14 +1,18 @@
 if theme.disqus_shortname
   #disqus_thread
+  #disqus_proxy_thread
   script.
-    var disqus_config = function () {
-        this.page.url = "#{page.permalink}"
-        this.page.identifier = "#{page.path}"
-      }
-    ;(function () {
-      var d = document, s = d.createElement('script')
-      s.src = 'https://#{theme.disqus_shortname}.disqus.com/embed.js'
-      s.setAttribute('data-timestamp', +new Date())
-      ;(d.head || d.body).appendChild(s)
-    })()
-  script(id="dsq-count-scr" src='//' + theme.disqus_shortname + '.disqus.com/count.js' async)
+    window.disqusProxy = {
+      userName: '#{theme.disqus_shortname}',
+      server: 'localhost',
+      port: 4000,
+      defaultAvatar: '/images/default-avatar.png',
+      adminAvatar: '/images/admin-avatar.jpg',
+      identifier: "#{page.path}"
+    };
+    window.disqus_config = function () {
+      this.page.url = "#{page.permalink}"
+      this.page.identifier = "#{page.path}"
+    };
+  script(src="/static/js/main.a34f57e3.js" async)
+  link(rel="stylesheet" href="/static/css/main.c404201f.css")
