@@ -15,7 +15,7 @@ if theme.disqus_username && theme.disqus_proxy
       this.page.identifier = "#{page.path}";
     };
     window.onload = function () {
-      const s = document.createElement('script');
+      var s = document.createElement('script');
       s.src = '#{theme.disqus_proxy.script_path}';
       s.async = true;
       document.body.appendChild(s);
