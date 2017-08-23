@@ -7,8 +7,9 @@ block content
     article
       header
         h1.title!= page.title
-        i.icon-calendar
-        span!= date(page.date, 'YYYY.MM.DD')
+        if page.hideDate !== true
+          i.icon-calendar
+          span!= date(page.date, 'YYYY.MM.DD')
       .content!=page.content
     include  _partial/comment
 
