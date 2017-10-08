@@ -18,7 +18,7 @@
 
 #### Clone theme
 
-`git clone https://github.com/ycwalker/hexo-theme-aqua.git themes/aqua`
+`git clone https://github.com/ciqulover/hexo-theme-aqua.git themes/aqua`
 
 
 ### Enable
