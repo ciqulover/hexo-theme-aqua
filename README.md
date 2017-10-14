@@ -1,7 +1,9 @@
 #### An ultra simple hexo theme
 ##### Rewrite from hexo theme [fexo](https://github.com/forsigner/fexo)
 
-[Demo](http://ycwalker.com/hexo-theme-aqua/)
+[中文](https://ycwalker.com/2017/01/23/about-aqua/)
+
+[Demo](https://ycwalker.com/)
 
 ### Install
 
