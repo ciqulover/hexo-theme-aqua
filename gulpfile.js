@@ -12,14 +12,8 @@ gulp.task('sass', function () {
     .pipe(livereload())
 })
 
-gulp.task('js', function () {
-  return gulp.src('source/js/scroll.js')
-    .pipe(livereload())
-})
-
 gulp.task('default', ['sass'])
-gulp.task('watch', ['sass', 'js'], function () {
+gulp.task('watch', ['sass'], function () {
   livereload.listen()
   gulp.watch('source/_sass/**/*.scss', ['sass'])
-  gulp.watch('source/js/**/*.js', ['js'])
 })

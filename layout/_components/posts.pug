@@ -1,18 +1,3 @@
-mixin posts()
-  ul.excerpts
-    - page.posts.forEach(function(post) {
-    li
-      div.article-meta
-        a.title(href=url_for(post.path))!= post.title
-        i.icon-calendar
-        | &nbsp;
-        time!= date(post.date, 'YYYY.MM.DD')
-      .post.post-excerpt!=post.excerpt
-      a.read-more(href=url_for(post.path))
-        | more...
-    - })
-
-
 mixin postLists()
   -
     var year = 0
